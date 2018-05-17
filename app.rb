@@ -56,7 +56,7 @@ class App < Sinatra::Base
   get '/logout' do
     #clear session hash here
     session.clear
-    "session content : {}"
+    puts "session content : {}"
     "Session has now been cleared. session content: #{session.inspect}. Continue on to the '/finish' line!"
     erb :logout
   end
